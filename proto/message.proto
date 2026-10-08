@@ -1,0 +1,26 @@
+edition = "2024"; 
+
+option go_package = "github.com/therealtunge/backgammon/autogen";
+
+import "proto/connect.proto";
+import "proto/close.proto";
+import "proto/read.proto";
+import "proto/write.proto";
+
+enum Type {
+	TYPE_CONN = 0;
+	TYPE_CLOSE = 1;
+	TYPE_READ = 2;
+	TYPE_WRITE = 3;
+};
+message Request {
+	string password = 1;
+	Type t = 2;
+
+	oneof req {
+		ConnectRequest connect = 3;
+		CloseRequest close = 4;
+		ReadRequest read = 5;
+		WriteRequest write = 6;
+	};
+}

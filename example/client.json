@@ -1,0 +1,8 @@
+{
+	"password": "v3RyS3cur3p4SsW0rd",
+	"proxyBindIP": "127.0.0.1",
+	"proxyPort": 10808,
+	"serverAddress": "127.0.0.1:10443",
+	"useHTTPS": true,
+	"readWaitTimeMS": 300
+}

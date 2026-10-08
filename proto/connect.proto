@@ -1,0 +1,14 @@
+edition = "2024"; 
+
+option go_package = "github.com/therealtunge/backgammon/autogen";
+
+enum NetType {
+	TCP = 0;
+	UDP = 1;
+	TLS = 2;
+}
+
+message ConnectRequest {
+	string dest = 1;
+	NetType type = 2;
+}

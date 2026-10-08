@@ -1,0 +1,16 @@
+edition = "2024"; 
+
+option go_package = "github.com/therealtunge/backgammon/autogen";
+
+// response
+message Response {
+	oneof r {
+		// for connect
+		uint32 fd = 1;
+
+		// for read
+		string data = 2;
+
+		string error = 3;
+	};
+}

@@ -1,0 +1,7 @@
+{
+	"password": "v3RyS3cur3p4SsW0rd",
+	"listenAddr": "127.0.0.1:10443",
+	"useTLS": true,
+	"TLSKeyFile": "tls.key",
+	"TLSCertFile": "tls.cert"
+}
